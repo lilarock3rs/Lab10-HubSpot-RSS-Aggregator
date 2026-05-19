@@ -1,0 +1,11 @@
+{
+  "name": "rss_feeds",
+  "label": "RSS Feeds",
+  "description": "RSS/Atom source URLs for the aggregator",
+  "columns": [
+    { "name": "name", "label": "Name", "type": "TEXT", "required": true },
+    { "name": "feed_url", "label": "Feed URL", "type": "TEXT", "required": true },
+    { "name": "enabled", "label": "Enabled", "type": "BOOLEAN", "required": false },
+    { "name": "last_synced_at", "label": "Last synced", "type": "DATETIME", "required": false }
+  ]
+}

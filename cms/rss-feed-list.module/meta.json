@@ -1,0 +1,14 @@
+{
+  "label": "RSS Feed List",
+  "css_assets": [],
+  "external_js": [],
+  "global": false,
+  "host_template_types": ["PAGE", "BLOG_LISTING", "BLOG_POST"],
+  "icon": "news",
+  "is_available_for_new_content": true,
+  "module_id": null,
+  "smart_type": "NOT_SMART",
+  "tags": ["rss", "hubdb"],
+  "is_global": false,
+  "content_types": ["LANDING_PAGE", "SITE_PAGE"]
+}

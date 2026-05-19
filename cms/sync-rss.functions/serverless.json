@@ -1,0 +1,11 @@
+{
+  "runtime": "nodejs20.x",
+  "version": "1.0",
+  "endpoints": {
+    "sync-rss": {
+      "method": "POST",
+      "file": "sync-rss.js"
+    }
+  },
+  "secrets": ["HUBSPOT_PRIVATE_APP_TOKEN"]
+}

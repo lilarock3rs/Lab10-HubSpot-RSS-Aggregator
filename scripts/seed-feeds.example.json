@@ -1,0 +1,12 @@
+[
+  {
+    "name": "HubSpot Blog",
+    "feed_url": "https://blog.hubspot.com/marketing/rss.xml",
+    "enabled": true
+  },
+  {
+    "name": "NASA Breaking News",
+    "feed_url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+    "enabled": true
+  }
+]

@@ -1,0 +1,61 @@
+.rss-feed-list {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.rss-feed-list__heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rss-feed-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rss-feed-list__item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+.rss-feed-list__item:last-child {
+  border-bottom: none;
+}
+
+.rss-feed-list__title {
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem;
+}
+
+.rss-feed-list__title a {
+  color: #ff5c35;
+  text-decoration: none;
+}
+
+.rss-feed-list__title a:hover {
+  text-decoration: underline;
+}
+
+.rss-feed-list__meta {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem;
+}
+
+.rss-feed-list__meta span::after {
+  content: " · ";
+}
+
+.rss-feed-list__summary {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #374151;
+}
+
+.rss-feed-list__empty {
+  color: #6b7280;
+  font-style: italic;
+}

@@ -1,0 +1,33 @@
+{% set limit = module.limit|default(10) %}
+{% set query = "&orderBy=-published_at&limit=" ~ limit %}
+{% set rows = hubdb_table_rows(module.table_name, query) %}
+
+<section class="rss-feed-list">
+  <h2 class="rss-feed-list__heading">Latest news</h2>
+  {% if rows %}
+    <ul class="rss-feed-list__items">
+      {% for row in rows %}
+        <li class="rss-feed-list__item">
+          <article>
+            <h3 class="rss-feed-list__title">
+              <a href="{{ row.link }}" target="_blank" rel="noopener noreferrer">{{ row.title }}</a>
+            </h3>
+            <p class="rss-feed-list__meta">
+              {% if row.feed_name %}<span>{{ row.feed_name }}</span>{% endif %}
+              {% if row.published_at %}
+                <time datetime="{{ row.published_at|datetimeformat('%Y-%m-%d') }}">
+                  {{ row.published_at|datetimeformat('%b %e, %Y') }}
+                </time>
+              {% endif %}
+            </p>
+            {% if module.show_summary and row.summary %}
+              <p class="rss-feed-list__summary">{{ row.summary }}</p>
+            {% endif %}
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="rss-feed-list__empty">No articles yet. Run sync-rss after adding feeds to HubDB.</p>
+  {% endif %}
+</section>

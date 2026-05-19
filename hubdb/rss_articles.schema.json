@@ -1,0 +1,14 @@
+{
+  "name": "rss_articles",
+  "label": "RSS Articles",
+  "description": "Normalized articles synced from RSS feeds",
+  "columns": [
+    { "name": "title", "label": "Title", "type": "TEXT", "required": true },
+    { "name": "link", "label": "Link", "type": "TEXT", "required": true },
+    { "name": "summary", "label": "Summary", "type": "TEXT", "required": false },
+    { "name": "published_at", "label": "Published at", "type": "DATETIME", "required": false },
+    { "name": "feed_name", "label": "Feed name", "type": "TEXT", "required": false },
+    { "name": "guid", "label": "GUID", "type": "TEXT", "required": false },
+    { "name": "image_url", "label": "Image URL", "type": "TEXT", "required": false }
+  ]
+}

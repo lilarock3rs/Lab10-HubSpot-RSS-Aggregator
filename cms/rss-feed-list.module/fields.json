@@ -1,0 +1,31 @@
+[
+  {
+    "id": "table_name",
+    "name": "table_name",
+    "label": "HubDB table name",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "rss_articles"
+  },
+  {
+    "id": "limit",
+    "name": "limit",
+    "label": "Number of articles",
+    "required": false,
+    "locked": false,
+    "type": "number",
+    "default": 10,
+    "min": 1,
+    "max": 50
+  },
+  {
+    "id": "show_summary",
+    "name": "show_summary",
+    "label": "Show summary",
+    "required": false,
+    "locked": false,
+    "type": "boolean",
+    "default": true
+  }
+]
