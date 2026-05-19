@@ -1,5 +1,7 @@
 # Lab 10 — HubSpot RSS Aggregator (Skill + MCP)
 
+Repositorio: https://github.com/lilarock3rs/Lab10-HubSpot-RSS-Aggregator
+
 Agregador RSS → HubDB → módulo CMS HubL, orquestado por la skill `hubspot-rss-hubdb-aggregator` y MCP **HubSpotDev**.
 
 ## Decisiones (MVP)
@@ -99,8 +101,8 @@ Ver `.cursor/skills/hubspot-rss-hubdb-aggregator/examples.md`.
 ## Checklist lab
 
 - [x] Skill en `.cursor/skills/`
-- [ ] MCP: `search-docs`, `create-cms-module`, `create-cms-function` (en demo)
 - [x] Tablas HubDB creadas (`rss_feeds`, `rss_articles`)
-- [ ] Tablas **publicadas** en UI
-- [ ] Serverless desplegado + secret configurado
-- [ ] Sync manual OK + módulo en página
+- [x] Serverless desplegado + secret configurado
+- [x] Sync manual OK
+- [x] Código en GitHub
+- [ ] Módulo en landing publicada (UI HubSpot)
